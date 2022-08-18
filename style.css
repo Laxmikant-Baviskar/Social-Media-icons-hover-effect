@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #F2F7FD;
+}
+
+p{
+    position: absolute;
+    top: 8rem;
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #484848;
+    text-shadow: 8px 7px 4px #00000024;
+}
+
+.cant{
+    width: 8rem;
+    height: 8rem;
+    background: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    overflow: hidden;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.cant:hover{
+    transform: translateY(-5px);
+}
+
+.cant img{
+    width: 8rem;
+}
+
+.cant:hover img{
+    animation: jello-horizntal 0.9s both;
+}
+
+.yt-area{
+    box-shadow: 0px 20px 20px -17px rgba( 255, 16, 39, 0.5);
+}
+.fb-area{
+    box-shadow: 0px 20px 20px -17px rgba( 0, 111, 255, 0.53);
+}
+.sc-area{
+    box-shadow: 0px 20px 20px -17px rgba( 255, 159, 16, 0.53);
+}
+/* hover area */
+.yt-area:hover{
+    box-shadow: 0px 20px 35px -16px rgba( 255, 16, 39, 0.57);
+}
+.fb-area:hover{
+    box-shadow: 0px 20px 35px -16px rgba( 0, 111, 255, 0.65);
+}
+.sc-area:hover{
+    box-shadow: 0px 20px 35px -16px rgba( 255, 159, 16, 0.6);
+}
+
+@keyframes jello-horizntal {
+    0%, 100%{
+        transform: scale3d(1, 1, 1);
+    }
+    30%{
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40%{
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50%{
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65%{
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75%{
+        transform: scale3d(1.05, 0.95, 1);
+    }
+}
